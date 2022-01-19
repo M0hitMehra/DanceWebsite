@@ -8,7 +8,7 @@ async function main() {
     await mongoose.connect('mongodb://localhost:27017/contactDance');
 }
 
-const port = process.env.port || 5000;
+const port = process.env.PORT || 5000;
 
 const contact = new mongoose.Schema({
     name: String,
