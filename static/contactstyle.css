@@ -1,0 +1,36 @@
+#navbar{
+    position: relative;
+}
+#heading{
+    text-align: center;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin: 35px;
+    padding-top: 50px;
+}
+.myInp{
+    margin: 17px;
+    width: 45%;
+    height: 32px;
+    border: 2px solid black;
+    border-radius: 6px;
+}
+#btn{
+   
+    height: 40px;
+    width: 100px;
+    border: 2px solid black;
+    border-radius: 12px;
+    color: white;
+    background-color: black;
+}
+#container{
+    height: 82vh;
+}

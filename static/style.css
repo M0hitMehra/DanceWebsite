@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* NAVBAR...................................... */
+#navbar{width: 100%;
+    position: fixed;}
+#navbar ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-items: center;
+    background-color: aqua;
+    background: linear-gradient(blue,red);
+    padding: 5px 0;
+    /* height: 40px; */
+   
+}
+#navbar li{
+    padding:12px ;
+    list-style: none;
+    border: 2px solid black;
+    border-radius: 7px;
+   
+    background-color: black;
+    font-family: 'Bebas Neue', cursive;
+}
+
+#navbar li a{
+    text-decoration: none;
+     color: white;
+}
+
+/* INTRO.............................. */
+#intro{
+height: 500px;
+background-color: blue;
+background: url("https://wallpaperaccess.com/full/4792521.jpg") center center no-repeat;
+background-size: cover;
+
+ 
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+
+#intro p{
+    color: white;
+    /* font-size: 1.5rem; */
+    text-shadow: 5px 0px 3px #ff0000, -6px 4px 5px #000000;
+    font-weight: bold;
+}
+#learn{
+    font-size: 1.3rem;
+}
+#wel{
+    font-size: 2.2rem;
+}
+
+
+ /* BOXES.................................... */
+
+#boxes{
+    height: 500px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    column-gap: 15px;
+    row-gap: 20px;
+    grid-template-areas: 
+    "head  head head"
+    
+    "1st main  sidebar";
+    justify-content: space-around;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    background: linear-gradient(yellow , red);
+    
+}
+#boxes div{
+    text-align: center;
+    height: 300px;
+    color: white;
+    background-color: black;
+    width: 300px;
+    background: radial-gradient(blue , black);
+    transition: all 1s  ;
+    border: 2ps solid black;
+    border-radius: 15px;
+    box-shadow: 5px 0px 3px #ff0000, -6px 4px 5px #000000;
+}
+#boxes div:hover{
+    background: url("https://wallpaperaccess.com/full/4792521.jpg") center center no-repeat;
+    height: 350px;
+    border: 2ps solid black;
+    border-radius: 15px;
+    box-shadow: 5px 0px 3px #ff0000, -6px 4px 5px #000000;
+    
+}
+#box1 {
+    grid-area: 1st;
+  }
+  #box2 {
+    grid-area: main;
+  }
+  #box3 {
+    grid-area: sidebar;
+  }
+  #heading {
+      text-align: center;
+    grid-area: head;
+  }
+
+
+
+
+/* Sponsor............................................ */
+  #spon{
+    height: 300px;
+    background-color: #000000d4; 
+}
+#spon h2{
+    text-align: center;
+    color: white;
+    }
+#spon img{
+    height: 50%;
+    width: 25%;
+    margin-top: 77px;
+}
+.img2 , .img3{
+    filter: invert(1);
+}
+
+
+/* footer............................................. */
+#foot{
+    height: 20px;
+    background-color: salmon;
+
+}
+
+#foot p{
+    padding-left: 50%;
+}
