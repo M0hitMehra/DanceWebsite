@@ -39,7 +39,7 @@ app.get('/contact', (req, res) => {
 });
 
 app.post('/contact', (req, res) => {
-    const myData = new Contact(req.body);
+    var myData = new Contact(req.body);
     myData.save().then(() =>{
         
         res.status(200).render('sent.pug');
